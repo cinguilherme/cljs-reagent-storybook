@@ -1,0 +1,23 @@
+{
+  "name": "cljs-storybook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "shadow-cljs watch frontend",
+    "dev-stories": "shadow-cljs watch stories",
+    "storybook": "start-storybook"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@storybook/react": "^6.5.12",
+    "shadow-cljs": "^2.20.3"
+  },
+  "dependencies": {
+    "react": "17.0.1",
+    "react-dom": "17.0.1"
+  }
+}

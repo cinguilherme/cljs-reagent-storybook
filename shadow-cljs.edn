@@ -1,0 +1,17 @@
+{:source-paths
+ ["src/dev"
+  "src/main"
+  "src/test"]
+
+ :dependencies
+ [[reagent "1.0.0"]]
+
+ :dev-http {8080 "public"}
+
+ :builds
+ {:frontend {:target  :browser
+             :modules {:main {:init-fn acme.core/init}}}
+  
+  :stories  {:target      :npm-module
+             :entries     [acme.stories.header-stories]
+             :output-dir  "public/js/stories"}}}
